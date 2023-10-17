@@ -64,7 +64,21 @@ export Delete_unnecessary_items="0"          # 个别机型内一堆其他机型
 export Disable_53_redirection="0"            # 删除DNS强制重定向53端口防火墙规则(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
 export Cancel_running="0"                    # 取消路由器每天跑分任务(个别源码本身不带此功能)(1为启用命令,填0为不作修改)
 
-
+# 自定义LUCI插件
+# luci-app-mosdns
+#rm -rf feeds/packages/net/v2ray-geodata      # remove v2ray-geodata package from feeds (openwrt-22.03 & master)
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#内网测速度
+#git clone https://github.com/selfcan/luci-app-homebox.git package/homebox
+#bypass科学上网插件
+git clone https://github.com/tianiue/luci-app-bypass.git package/luci-app-bypass
+# 定时设置2.0版插件
+git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
+#luci-app-openclash插件
+#git clone https://github.com/vi-si/luci-app-openclash.git package/luci-app-openclash
+# 醋猫主题插件
+git clone https://github.com/sirpdboy/luci-theme-kucat.git package/luci-theme-kucat
 
 # 晶晨CPU系列打包固件设置(不懂请看说明)
 export amlogic_model="s905d"
