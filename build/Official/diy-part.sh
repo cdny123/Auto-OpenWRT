@@ -72,7 +72,7 @@ export Cancel_running="0"                    # 取消路由器每天跑分任务
 #内网测速度
 #git clone https://github.com/selfcan/luci-app-homebox.git package/homebox
 #bypass科学上网插件
-git clone https://github.com/lq-wq/luci-app-bypass.git package/luci-app-bypass
+#git clone https://github.com/lq-wq/luci-app-bypass.git package/luci-app-bypass
 #vssr科学上网插件
 git clone https://github.com/MilesPoupart/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
